@@ -1,0 +1,78 @@
+# This file contains weapon rules. It is important that all players in a 
+# game use the same rules. For this reason, only modify this file if you 
+# know what you're about by doing it.
+
+%NUM_WEAPONS=3
+
+# Weapon 0: Machine Gun
+@WEAPON 1
+	name=Machine Gun
+
+	geometry=turret_04
+	firePoints=3, .5; 3,-.5
+
+	damage=1
+	knockback=0
+	personalknockback=0
+	firingRate=.05
+	startingAmmo=100
+	accuracy=.17
+	rotability=1.5
+
+	bulletGeo=bullet_4dm
+	bulletVelocity=100
+	bulletMass=.1
+	bulletLifetime=10
+
+	onHitEmitters=explosion_micro       # These must be emitters with %SINGLE in them.
+	#bulletEmitters=missile_trail_00  # These should be emitters without %SINGLE in them.
+	onShotEmitters=muzzle_flash_half   # These must be emitters with %SINGLE in them.
+
+# Weapon 1: Missile Launcher
+@WEAPON 0
+	name=Missile Launcher
+
+	geometry=turret_02
+	firePoints=2.5, -1; 2.5, 1
+
+	damage=10
+	knockback=150
+	personalknockback=15
+	firingRate=1.2
+	startingAmmo=10
+	accuracy=0
+	rotability=.75
+
+	bulletGeo=bullet_1m
+	bulletVelocity=90
+	bulletMass=.1
+	bulletLifetime=10
+
+	onHitEmitters=explosion_kilo       # These must be emitters with %SINGLE in them.
+	bulletEmitters=missile_trail_00  # These should be emitters without %SINGLE in them.
+	#onShotEmitters=muzzle_flash_00   # These must be emitters with %SINGLE in them.
+
+# Weapon 2: Cannon
+@WEAPON 2
+	name=Cannon
+
+	geometry=turret_01
+	firePoints=3.5, 0;
+
+	damage=20
+	knockback=200
+	personalknockback=0
+	firingRate=.5
+	startingAmmo=100
+	accuracy=0
+	rotability=.75
+
+	bulletGeo=bullet_1m
+	bulletVelocity=90
+	bulletMass=1.5
+	bulletLifetime=10
+
+	onHitEmitters=explosion_normal       # These must be emitters with %SINGLE in them.
+	#bulletEmitters=missile_trail_00  # These should be emitters without %SINGLE in them.
+	onShotEmitters=muzzle_flash_full   # These must be emitters with %SINGLE in them.
+

@@ -1,0 +1,50 @@
+# This file contains tank rules. It is important that all players in a 
+# game use the same rules. For this reason, only modify this file if you 
+# know what you're about by doing it.
+
+# sensor modes: 0 = toggle. 1 = timer. 2 = hold.
+
+%NUM_SENSORS=7
+
+# Sensor 0: Simple toggle pad.
+@SENSOR 0
+	mode=0
+	geometry=sensor_circle
+	
+
+# Sensor 1: Simple hold pad.
+@SENSOR 1
+	mode=2
+	geometry=sensor_octagon
+
+# Sensor 2: 5 second timer.
+@SENSOR 2
+	mode=1
+	geometry=sensor_diamond
+	time=5
+
+# Sensor 3: 10 second timer.
+@SENSOR 3
+	mode=1
+	geometry=sensor_diamond
+	time=10
+
+# Sensor 4: 15 second timer.
+@SENSOR 4
+	mode=1
+	geometry=sensor_diamond
+	time=15
+
+# Sensor 5: 20 second timer.
+@SENSOR 5
+	mode=1
+	geometry=sensor_diamond
+	time=20
+
+# Sensor 6: 30 second timer.
+@SENSOR 6
+	mode=1
+	geometry=sensor_diamond
+	time=30
+
+

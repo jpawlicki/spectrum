@@ -1,0 +1,72 @@
+NETWORK ARCHITECTURE ~~
+
+In-Order Delivery not necessary as long as stuff is timestamped.
+Delivery Not Guaranteed
+
+UDP with 
+
+A single headless server is responsible for:
+	Accepting incoming connections, even in the middle of a game.
+	Managing the lobby and launching the game.
+	Distributing the mission file to all clients.
+	During a game, maintaining an authoritative gamestate.
+
+Each client is responsible for:
+	Sending position, shooting updates
+
+
+PHASE 1 - DATA TRANSFER & SYNC
+	Begins when a player joins - Rules files and mission file are transferred.
+	Master virtual clock is set to -360000000 ms (lobbies should not be open for >100 hours).
+	RTT for each player is estimated. Virtual clocks are all synced, assuming latency is 1/2, 1/2.
+	[In this phase, a player just sees "connecting", etc.]
+
+PHASE 2 - WALL
+	[In this phase, the mission is loaded, and the player picks a team and starts to configure.]
+	[When all players have made ready, the game moves on to phase 3.]
+
+PHASE 3 - GAME
+	Master clock sends out a time adjustment, setting all virtual clocks to -3000.
+	At t=0, game control is turned on.
+
+In-game, the server is responsible for managing all real logic.
+However, players have the power to report firing events - including source position, facing, velocity, and timestamp for the fired shot.
+Additionally, players have total control over the position of the tanks they control.
+
+The general policy is: if the user can cause it via input, the client is authoritative.
+Otherwise, the server is authoritative.
+
+Damage reports can come from either the server or the client.
+
+Each packet is a conglomeration of messages, with a maximum size of 1400 bytes.
+Each message begins with a 4-byte integer indicating the game time that a particular event occurred.
+Negative numbers are reserved for other message types:
+	+X: Entity created/destroyed/sync update.
+	-1: Chat message
+	-2: Server notification
+
+SYNC MESSAGE [Max size 1385, for 15 entities]
+	 4 bytes  : sync event timestamp.
+	 1 byte   : number of synced entities in this message
+	PER ENTITY: (92 bytes)
+		 4 bytes: objectid
+		 8 bytes: rotation
+		24 bytes: position
+		24 bytes: velocity
+		 8 bytes: angular velocity
+		24 bytes: special unit data (turret rotation, control flags, hull, etc)
+
+ENTITY CREATED MESSAGE [Max size 96 bytes]
+	4 bytes   : client 
+	4 bytes   : creation event timestamp
+	4 bytes   : new objectid
+	8 bytes   : rotation
+	24 bytes  : position
+	24 bytes  : velocity
+	8 bytes   : angular velocity
+	24 bytes  : special unit data
+
+ENTITY DESTROYED MESSAGE []
+	4 bytes   : destruction event timestamp
+	4 bytes   : objectid of destroyed object
+	4 bytes   : objectid of destroyed object

@@ -1,0 +1,50 @@
+GEOMETRY EDITOR=================================================================
+
+Controls:
+W/A/S/D : Camera movement
+Z/X: zoom
+Q/E: change point
+F/G: change PolyLine
+
+T: toggle snap
+Y: toggle drawing
+
+N: new layer
+R: remove vertex
+Left Mouse: move vertex
+Right Mouse: new vertex
+
+Shift-Left: move whole layer
+Shift-Right: clone and duplicate layer
+
+[: move PolyLine down
+]: move PolyLine up
+
+`: console
+
+1/2/3/4/5/6/7/8/9/0: change grid scale
+-: change grid mode (polar, cartesian)
+=: change grid anchor
++: reset grid anchor
+
+H/J/K/L/;/' : toggle PolyLine params
+C: change PolyLine color
+
+V: Save
+O: Open
+
+
+
+MISSION EDITOR==================================================================
+Controls:
+W/A/S/D : Camera movement
+Z/X: zoom
+
+Y: change mode
+T: toggle snap
+
+    In WALL mode only:
+
+    In PLACEABLE mode only:
+
+    In WALL mode only:

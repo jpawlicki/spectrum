@@ -1,0 +1,21 @@
+Loaded geo file "tank_02".
+Loaded geo file "tank_00".
+Loaded geo file "smoke_00".
+Loaded geo file "box_01".
+Loaded geo file "turret_00".
+Loaded geo file "tank_01".
+Loaded geo file "bullet_01".
+Loaded geo file "turret_02".
+Loaded geo file "bullet_00".
+Loaded geo file "muzzle_flash_diamond_00".
+Loaded geo file "turret1".
+Loaded geo file "explosion_00".
+Loaded geo file "muzzle_flash_00".
+Loaded geo file "turret_01".
+Loaded particle file "explosion_01".
+Loaded particle file "missile_trail_00".
+Loaded particle file "explosion_00".
+Loaded particle file "muzzle_flash_00".
+Framerate: 106.5340909090909
+System shutting down.
+Quit.

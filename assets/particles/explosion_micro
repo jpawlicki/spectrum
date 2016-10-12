@@ -1,0 +1,27 @@
+%SINGLE
+%PARTS=2
+
+@PART 0
+	type=.33;explosion_00;1.0;.1;255,128,0,255;64,64,64,255
+	spawnRate=5
+	spawnVelocity=20
+	spawnAngle=0
+	spawnFacing=0
+	spawnLayer=16
+	spawnRateJitter=3
+	spawnVelocityJitter=3
+	spawnAngleJitter=6.28
+	spawnFacingJitter=0
+
+@PART 1
+	type=.6;smoke_00;.2;.5;255,128,0,255;64,64,64,255
+	spawnRate=2
+	spawnVelocity=0
+	spawnAngle=0
+	spawnFacing=0
+	spawnLayer=12
+	spawnRateJitter=0
+	spawnVelocityJitter=2
+	spawnAngleJitter=6.28
+	spawnFacingJitter=6.28
+

@@ -1,0 +1,27 @@
+%SINGLE
+%PARTS=2
+
+@PART 0
+	type=.3;muzzle_flash_01;1;.1;255,128,0,255;255,128,0,255
+	spawnRate=1
+	spawnVelocity=0
+	spawnAngle=0
+	spawnFacing=0
+	spawnLayer=16
+	spawnRateJitter=0
+	spawnVelocityJitter=0
+	spawnAngleJitter=0
+	spawnFacingJitter=0
+
+@PART 1
+	type=.2;muzzle_flash_diamond_00;1;.1;255,128,0,255;255,128,0,255
+	spawnRate=2
+	spawnVelocity=10
+	spawnAngle=-1
+	spawnFacing=0
+	spawnLayer=16
+	spawnRateJitter=2
+	spawnVelocityJitter=10
+	spawnAngleJitter=2
+	spawnFacingJitter=0
+

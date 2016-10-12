@@ -1,0 +1,3 @@
+GEOFILE
+
+B ||.66, 0; -.33, .2; -.33, -.2 || 10,10,10,255 || COLLIDING #triangle bullet

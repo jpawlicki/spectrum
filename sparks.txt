@@ -1,0 +1,125 @@
+Action co-op game:
+
+	Sci-fi setting, where the players are people in suits of modular tanks.
+The players are sent on a mission from the Federal Government to retrieve data 
+cores containing research on items of significant importance to the ongoing war 
+effort. The players have to work together to defeat enemies, as well as solve 
+puzzles to make it to their goal.
+
+	Not all the players have the same objectives, however - at the beginning of 
+each mission players secretly choose a role that determines their win 
+condition. Each mission may have specific objectives for each of the roles.
+	+ Empire's Starguard - (Loyalist) - Usually win if a the datacore reaches an Empire dropship.
+	+ Federal Planets Alliance - (Loyalist) - Likewise, but sometimes want to sabotage the Starguard?
+	+ Tetraknife - (Mercenary) - Almost always, win condition is highest-loot extraction.
+	+ 
+	+ 
+
+		+ House Kain (Loyalist): You win if the data core is carried to the dropship by a non-rebel.
+		+ House Rorik (Rebel): You win if the data core is carried to the dropship by another rebel. You are told at the beginning of the game who the other rebels are.
+		+ House Liau (Mercenary): You win if you get to the dropship with more sparks than anyone else.
+		+ House Cooper (Pacifist): You win if the data core is destroyed.
+
+	There is a variety of equipment that can be picked up. Each piece of 
+equipment fills an equipment slot, of which players have 5. Equipment comes in 
+three varieties: Weapon, Passive, and Active. Active equipment is bound to a 
+hotkey when players pick it up, while passive equipment is doing something all 
+the time. Players can have multiple weapons, but only one is usable at any time 
+and switching takes a little time.
+	Equipment List:
+			[Weapons]
+		+ Automatic Rifle: the automatic rifle is the most well-rounded gun, and does good damage at a decent firing rate, range, and accuracy.
+		+ Vulcan Gun: the vulcan gun has a very fast firing rate but very low accuracy (high bullet spread). Other than this, it does well at range, and is good for crowd control.
+		+ Rail Gun: the rail gun has a slow firing rate but shoots with extreme accuracy and high damage at any range. Its bullets also provide high-knockback. It is good against single enemies.
+		+ Cluster Cannon: the cluster cannon fires a giant burst of ammunition that has high spread and does high damage but decellerates quickly and so is not good at range.
+		+ Lance Cannon: the lance cannon fires a large projectile that does little damage but has enormous knock-back.
+		+ Rocket: fires a rocket that explodes on impact, throwing all nearby entities away from the explosion and dealing splash damage. Deals very large damage, but ammunition is extremely limited (5).
+
+			[Passive]
+		+ Nanofactory: if you run out of ammunition, you can continue to shoot. Each shot drains sparks, however.
+		+ Spare Shields: increases your shield points by +30.
+		+ Grip Tracks: your skid threshold is doubled.
+		+ Inertial Defense: forces exerted upon you by others and bullets move you 50% as much as they would otherwise.
+		+ High Explosive Ammunition: each shot you have deals splash damage and has triple knockback. Lasts until your ammunition runs out.
+		+ Low Profile Ammunition: each shot you shoot experiences only 1/3 normal drag. Lasts until your ammunition runs out.
+		+ Sparkbattery: if you shut down and are damaged, you lose sparks at one third the normal rate.
+		+ Burrowing Ammunition: the bonus from flank hits is doubled while you have this ammunition. Lasts until your ammunition runs out.
+		+ Spare Ammunition Box: when you run out of ammo, your ammo is refilled and you lose this item.
+		+ Stall Ammunition: hits with this ammunition score and count toward sync hits for half again as long as normal ammunition. Lasts until your ammunition runs out.
+		+ Cascade Ammunition: hits with this ammunition deal bonus damage equal to half the damage dealt to the target in the last .5 seconds. Lasts until your ammunition runs out.
+		+ Rammer: when you collide with another entity, you deal damage proportional to your speed. You take 1/4 normal damage from impacts.
+		+ Hoverjets: you can cross pits without falling in.
+		+ Heat Shielding: you can cross inferno zones without damage.
+		+ Turbotreading: you move 25% faster.
+		+ Absorbive Armor: you take no damage from impacts.
+		+ Depleted Uranium Ammunition: the base damage of all shots you shoot deal 50% more damage.
+
+			[Active]
+		+ Sparkwell: Spend 25 sparks to attract all nearby sparks gravitationally for 15 seconds.
+		+ Shield Supercharger: Spend 100 sparks to become invincible for 15 seconds.
+		+ Proximity Mines: Spend 30 sparks to lay a mine that explodes when anyone comes near it. The mine arms after 5 seconds.
+		+ Rocketpack: Spend 10 sparks, hurls you forward into a skid. May enable you to cross pits.
+		+ Wormhole Generator: Spend 150 sparks, teleport to selected location.
+
+	Ideas:
+		+ The first four weapons are available at the start of each mission.
+		+ Square buttons that require being held down to open a door - usually another player must go through and push a circle button to permanently open the door.
+		+ Circle buttons have permanent effects when pushed.
+		+ "Flank Hits" - show an 'F+5' on a hit, deal +5 damage per bullet. A flank hit is scored when the target has been hit by a bullet between 140 and 220 degrees within the last second.
+		+ "Sync Hits" - when a target is hit by a different attackers within .2 seconds of each other, they score a sync hit, and each bullet's damage is multiplied by the number equal to the number of attackers participating in the sync hit.
+		+ "Critical Hits" - most enemies have a weak zone. If the weak zone is hit, the shot deals bonus damage equal to 1/10th of the target's remaining hit points. Targets killed by a critical hit drop double sparks.
+		+ When destroyed, most enemies drop just sparks, which can be picked up by players.
+		+ When a player's shields run out, they shut down for a few seconds. Every point of damage they take drains a spark until they power back up with full shields. They also drop any Key Items and a random piece of equipment when this occurs.
+		+ At special shield recharge stations, players can convert sparks into shield points.
+
+	Obstacles:
+		+ Ice! No friction!
+		+ Circle Buttons: need to be held down to have an effect.
+		+ Square Buttons: running over them toggles them.
+		+ Hexagon Buttons: attached to a timer, running over them again resets the timer. Maybe they show the remaining time on the button? Time starts when you get off the button.
+		+ AND gate, OR gate, etc? Wires connecting components?
+		+ Chemical Pits: zones that players cannot cross without hoverjets or somehow being thrown or taking damage.
+		+ Force Bridges: usually activated/deactivated by standing on square buttons. Enable others to cross pits without taking damage.
+		+ Force Walls: usually activated/deactivated by standing on square buttons. Block bullets, people, and inferno jets.
+		+ Bullethole: constantly shoots a stream of bullets directly away from itself.
+		+ Inferno Jet: constantly shoots a stream of fire away from itself.
+		+ Megafan: exerts a force on all passers-through.
+		+ Riddles? Logic Puzzles?
+		+ Whirling blades? Crushing pistons?
+
+////////////////////////////////////////////////////////////////////////////////
+Idea 2: Each faction involved in the situation has a number of units and a 
+number of players. The number of players is less than the number of tanks.
+
+Players control one tank at a time, and rotate through them by pressing some 
+key or another. Tanks not currently being controlled will conduct interception 
+fire but will not move.
+
+Most missions have unusual conditions: very few are simple stand-and-fight 
+missions. The following things are building blocks to make scenarios out of:
+
+	Repair Bay - tanks on this repairing platform regain hull points.
+	Sensor Array - provides LOS in an area.
+
+Scenario pieces:
+		Primary Objectives:
+	Destroy a particular vehicle/tank.
+	Evacuate tanks off map.
+	Escort moving object.
+	Time limit - either last as long as possible or last to a given time.
+	Destroy all opponent vehicles.
+	Defend building / Destroy building.
+	
+			Secondary Objectives:
+	Capture sensor array.
+	
+		Complications:
+	Pre-existing damage.
+	No reinforcements available.
+	No repair bays.
+	Choke points.
+	Reinforcements have fixed (vulnerable) points.
+	Some units are far away.
+	Special units: remarkably weak, or remarkably strong.
+	Force imbalances: more units vs less units.
+	Ability to see entire map/be limited to fog of war.

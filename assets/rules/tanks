@@ -1,0 +1,40 @@
+# This file contains tank rules. It is important that all players in a 
+# game use the same rules. For this reason, only modify this file if you 
+# know what you're about by doing it.
+
+%NUM_TANKS=3
+
+# Tank 0: The Leopard
+@TANK 0
+	name=Leopard Mk I
+	geometry=tank_00
+	topspeed=15
+	traction=15
+	mass=8
+	rotinertia=10
+	armor=10
+	attachpoints=0,0;0,-3;0,3
+
+# Tank 1: The Cheetah
+@TANK 1
+	name=Cheetah
+	geometry=tank_01
+	topspeed=20
+	traction=12
+	mass=10
+	rotinertia=10
+	armor=8
+	attachpoints=0,0;0,-3;0,3
+
+# Tank 2: The Bobcat
+@TANK 2
+	name=Bobcat Uparmor
+	geometry=tank_02
+	topspeed=15
+	traction=13
+	mass=13
+	rotinertia=11
+	armor=12
+	attachpoints=0,0;0,-3;0,3
+
+

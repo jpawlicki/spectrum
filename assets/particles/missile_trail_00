@@ -1,0 +1,14 @@
+%PARTS=1
+
+@PART 0
+	type=1;smoke_00;.5;2;255,85,0,255;64,64,64,255
+	spawnRate=.015
+	spawnVelocity=1
+	spawnAngle=0
+	spawnFacing=0
+	spawnLayer=12
+	spawnRateJitter=.015
+	spawnVelocityJitter=1
+	spawnAngleJitter=6.28
+	spawnFacingJitter=6.28
+
